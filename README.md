@@ -117,6 +117,48 @@ Reflection:
 
 * **Explain how each flowchart node maps to your C code.**
 
+## Reflection: Mapping Flowchart to C Code
+
+### Node A: `Start: x`
+- This is the input value `x` that the function receives.
+- In C: `void flowchart_logic(int x)` receives `x` as parameter.
+
+### Node B: `Initialize result = 1`
+- This sets the starting value for the calculation.
+- In C: `int result = 1;`
+
+### Node C: `i = 1 to x?`
+- This is a loop that goes from 1 to x.
+- In C: `for (int i = 1; i <= x; i++)`
+
+### Node E: `i % 2 == 0?`
+- This checks if `i` is even.
+- In C: `if (i % 2 == 0)`
+
+### Node F: `result += i`
+- If `i` is even, we add it to `result`.
+- In C: `result += i;`
+
+### Node G: `result *= i`
+- If `i` is odd, we multiply `result` with `i`.
+- In C: `else { result *= i; }`
+
+## Node H: `result > 1000?`
+- This checks if `result` is greater than 1000.
+- In C: `if (result > 1000)`
+
+### Node I: `result -= 100`
+- If result is too big, we subtract 100.
+- In C: `result -= 100;`
+
+### Node J: `Increment i`
+- This is part of the loop; i is automatically incremented in the `for` loop.
+- In C: handled by `i++` in the `for` statement.
+
+### Node D: `Return result`
+- In the flowchart this is the end. In our case, we print the result.
+- In C: `printf("Final result for x = %d: %d\n", x, result);`
+
 ---
 
 ### Task 3: Code-to-Flowchart
@@ -167,3 +209,5 @@ graph TD
 ---
 
 **Remember:** Stop after **90 minutes** and record where you stopped.
+
+Used Time: 67 Minutes
